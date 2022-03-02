@@ -250,6 +250,7 @@ poller:
 			RestartPolicy: container.RestartPolicy{
 				Name: "always",
 			},
+			ExtraHosts: []string{"drone.production.localbitcoins.com:10.70.1.2"},
 		}, nil, "agent")
 
 	if err != nil {
