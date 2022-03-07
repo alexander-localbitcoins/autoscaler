@@ -63,7 +63,8 @@ write_files:
         "tlsverify": true,
         "tlscacert": "/etc/docker/ca.pem",
         "tlscert": "/etc/docker/server-cert.pem",
-        "tlskey": "/etc/docker/server-key.pem"
+        "tlskey": "/etc/docker/server-key.pem",
+        "dns": ["10.70.1.2"]
       }
   - path: /etc/docker/ca.pem
     encoding: b64
